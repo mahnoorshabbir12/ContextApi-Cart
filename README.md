@@ -1,12 +1,60 @@
-# React + Vite
+# 🛒 Context API Cart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and elegant shopping cart built with **React** and **Context API** to manage global state, designed with Bootstrap styling.
 
-Currently, two official plugins are available:
+🌐 **Live Demo:**  
+👉 [mahnoorshabbir-contextapi-cart.vercel.app](https://mahnoorshabbir-contextapi-cart.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📁 Folder Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+│
+├── components/
+│   ├── Cart.jsx              # Displays cart items and total
+│   ├── CartSummary.jsx       # Summary card with total price
+│   ├── Card.jsx              # Product card with Add to Cart button
+│   └── PageSetup.jsx         # Layout containing all cards
+│
+├── context/
+│   └── CartContext.jsx       # Context provider and reducer logic
+│
+├── App.jsx                   # Root component with layout
+├── index.jsx                 # App entry point
+└── styles/
+    └── index.css             # Optional custom styles
+```
+
+---
+
+## 🧠 How It Works
+
+- `CartContext.jsx` uses **React Context** to provide global cart state and actions like `addToCart`, `removeFromCart`, and `calculateTotal`.
+- `Card.jsx` displays each product and allows users to add items to the cart.
+- `Cart.jsx` lists all cart items with quantity and price.
+- `CartSummary.jsx` shows the total price and number of items.
+- `PageSetup.jsx` contains the product layout.
+
+---
+
+## 🚀 Features
+
+- Add/remove products to/from cart  
+- Quantity updates and total calculation  
+- Global state managed with Context API  
+- Clean UI with Bootstrap grid and cards  
+
+---
+
+## 🛠 Tech Stack
+
+- React  
+- Context API  
+- Vite  
+- Bootstrap 5  
+
+---
+
+
